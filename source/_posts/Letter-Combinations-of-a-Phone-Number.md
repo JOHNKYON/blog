@@ -42,6 +42,6 @@ Although the above answer is in lexicographical order, your answer could be in a
         return ans;
     }
 
-This alogirthm uses a queque to make sure every new character was added to the former string, shown as below.
+This alogirthm uses a queque to make sure every new character was added to the previous string, shown as below.
 
 ![](/images/leetcode17_2.jpg)
