@@ -35,7 +35,7 @@ Description: Resolve #3.
 
 # Automatic test
 Every time you commit something to your project, you have to make sure that the whole project doesn't break down because of your commit contains bugs or something. Luckily, Travis-CI can do it and its also supported by GitHub, wichi means you can view if your test passed or not before admit a pull request.
-![](\images\github_project\1.png)
+![](/images/github_project/1.png)
 
 To distribute the automatic test is very simple. All you need to do is add a ```.travis.yml``` file to the root directory of your project.
 
@@ -45,7 +45,7 @@ See [official doc](https://docs.travis-ci.com/) for more help.
 Master branch is very important to your project, which should not be manipulated casually, it is recommended to add several protection checks when merge any commit to your master branch.
 
 It is recommended to do as follows:
-![](\images\github_project\2.png)
+![](/images/github_project/2.png)
 
 Then look! Your master branch is under protection!
-![](\images\github_project\3.png)
+![](/images/github_project/3.png)
