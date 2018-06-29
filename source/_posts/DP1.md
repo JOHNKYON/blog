@@ -39,7 +39,7 @@ Now consider a situation, that we wanted to know how unbalanced the coin is, so 
 
 Well we'd always hope we can toss it forever and at last $k/n$ would of course convergence to q. But in real life, in most cases we can not try it so many times. For instance, we can only toss the coin four times, and you get "*head head tail tail*". Well, here $k/n$ is absolutely unreliable, so we can just give it a guess, and that we can only say "**it sounds more reasonable if q is a certain value in $[ 0,1]$**". And we can not say "Yes, it is the q value."
 
-Consider if we get *{head, head, tail, tail}* in our four trails, absolutely we'd 0.5 would be a reasonable guess, and 0.2 or 0.8 would sound kind of unlikely to be, 0.05 and 0.95 would be totally a joke to most people.
+Consider if we get *{head, head, tail, tail}* in our four trails, absolutely we'd say 0.5 would be a reasonable guess, and 0.2 or 0.8 would sound kind of unlikely to be, 0.05 and 0.95 would be totally a joke to most people.
 
 So as guys who love math and computer science, we'd like to have some tools in math to describe this, like use a probability density function. Here we see another problem, we want to update this function based on the prior we already have if we keep trying and get new observations. Naturally, we'd feel **Bayes theorem** would fit this well, because Bayes can update probability with continuous observations, and every time we update all we need is the prior of the previous status. Now we describe this problem with a more formal language.
 
@@ -59,7 +59,7 @@ By tossing the coin n times, it would be a Bernoulli process,  so when q is cons
 So $f(q|x)$ is proportional to prior and the conditional probability above, which we say:
 $$f(q|x) \sim q^k(1-q)^{n-k}f(q)$$
 
-Now let's have a look at $f(q)$. Naturally, when we know nothing about the coin, we should consider the q can be any value in $[0,1]$. So we'd prefer to think $f(q)$ to be uniformly distributed in this interval, which is $f(q)=1$ for q in $$[0,1].
+Now let's have a look at $f(q)$. Naturally, when we know nothing about the coin, we should consider the q can be any value in $[0,1]$. So we'd prefer to think $f(q)$ to be uniformly distributed in this interval, which is $f(q)=1$ for q in $$[0,1]$$.
 
 Now we can see in the formula $f(q|x) \sim q^k(1-q)^{n-k}f(q)$. $q^k(1-q)^{n-k}$ times a $[0,1]$ uniform distribution would result in a **Beta Distribution**.
 

@@ -84,3 +84,13 @@ deploy:
 # Generate sitemap
 sitemap: 
   path: sitemap.xml
+
+# Kramed config
+kramed: 
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: false
