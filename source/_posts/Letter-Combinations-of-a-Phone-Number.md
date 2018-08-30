@@ -22,25 +22,26 @@ A mapping of digit to letters (just like on the telephone buttons) is given belo
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 
 *java* 
-
-    public List<String> letterCombinations(String digits) {
-        LinkedList<String> ans = new LinkedList<>();
-        if (0 == digits.length()) {
-            return ans;
-        }
-        String[] mapping = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        ans.add("");
-        for (int i = 0; i < digits.length(); i++) {
-            int x = Character.getNumericValue(digits.charAt(i));
-            while (ans.peek().length() == i) {
-                String temp = ans.remove();
-                for (Character c : mapping[x].toCharArray()) {
-                    ans.add(temp + c);
-                }
-            }
-        }
+```java
+public List<String> letterCombinations(String digits) {
+    LinkedList<String> ans = new LinkedList<>();
+    if (0 == digits.length()) {
         return ans;
     }
+    String[] mapping = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    ans.add("");
+    for (int i = 0; i < digits.length(); i++) {
+        int x = Character.getNumericValue(digits.charAt(i));
+        while (ans.peek().length() == i) {
+            String temp = ans.remove();
+            for (Character c : mapping[x].toCharArray()) {
+                ans.add(temp + c);
+            }
+        }
+    }
+    return ans;
+}
+```
 
 This alogirthm uses a queque to make sure every new character was added to the previous string, shown as below.
 
