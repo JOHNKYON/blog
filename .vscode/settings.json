@@ -2,12 +2,14 @@
     "cSpell.words": [
         "Eulerian",
         "Ramalho",
+        "bytearray",
         "doctest",
         "dunder",
         "getitem",
         "kaggle",
         "leetcode",
         "pythonic",
-        "setitem"
+        "setitem",
+        "struct"
     ]
 }
