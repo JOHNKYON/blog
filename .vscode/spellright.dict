@@ -5,3 +5,5 @@ getitem
 len
 dunder
 setitem
+bytearray
+doctest

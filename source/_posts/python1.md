@@ -17,7 +17,7 @@ By the first time I read this sentence, all I felt was wired. As we all know, Py
 
 > Note: In Python, we're going to meet a lot of methods that looks like **\_\_getitem\_\_**, and we'll call them *"dunder_getitem"* (dunder means double-under). And also notice that, double under like **\_\_x** has other meanings in Python, and please don't mess up with them.
 
-It's very important to implement those methods that can be called by the framework itself, we're going to show you how to implement two special methods called **\_\_getitem\_\_** and **\_\len\_\_**.
+It's very important to implement those methods that can be called by the framework itself, we're going to show you how to implement two special methods called **\_\_getitem\_\_** and **\_\_len\_\_**.
 
 ## 1.1 Pythonic Cards
 
@@ -92,7 +92,7 @@ Card(rank='2', suit='spades')
 Card(rank='3', suit='spades')
 Card(rank='4', suit='spades')
 Card(rank='5', suit='spades')
-...
+...v
 ```
 
 Just by implementing **\_\_getitem\_\_** and **\_\len\_\_** methods, **FrenchDeck** class is just like any sequential data model in Python, showing core features of Python (like iterating and slicing). It can also be used for standard libraries like **random.choice**, **reversed** and **sorted**.
