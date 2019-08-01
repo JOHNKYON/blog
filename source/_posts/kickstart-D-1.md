@@ -73,7 +73,7 @@ boolean evenOnes(int n) {
 ```
 
 #### A small improve
-We have noticed that this require $k$ times of comparisons, while $n$ denotes the number of bits of the integer. In Java 8, $k = 32$.
+We have noticed that this require $k$ times of comparisons, while $k$ denotes the number of bits of the integer. In Java 8, $k = 32$.
 
 Can we improve it a little bit? Here a method that allow us to compare exactly $a$ times, while $a$ denotes the total number of 1 in $n$'s bits presentation. Here's how we do it:
 
