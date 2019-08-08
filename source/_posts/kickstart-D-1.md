@@ -8,7 +8,7 @@ date: 2019-08-01 16:04:05
 ---
 
 ## Problem Link
-See [hear](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161426).
+See [here](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161426).
 
 ## Problem
 Steven has an array of N non-negative integers. The i-th integer (indexed starting from 0) in the array is Ai.
