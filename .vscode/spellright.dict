@@ -7,9 +7,12 @@ dunder
 setitem
 bytearray
 doctest
+<<<<<<< HEAD
 yyf
 Mercari
 Computer
 Emde
 testcase
 linkedlist
+=======
+>>>>>>> 2a6fcf1... Remove auto-indexing.

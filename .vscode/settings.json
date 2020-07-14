@@ -12,6 +12,7 @@
         "pythonic",
         "setitem",
         "struct"
+<<<<<<< HEAD
     ],
     "spellright.language": [
         "en"
@@ -20,5 +21,7 @@
         "markdown",
         "latex",
         "plaintext"
+=======
+>>>>>>> 2a6fcf1... Remove auto-indexing.
     ]
 }
